@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <h1>Echo Chamber</h1>
+    <form id="room-form">
+      <p>
+        <span>Current Room: </span>
+        <strong id="room-display"></strong>
+      </p>
+      <input type="text" id="room" />
+      <button type="submit">Join room</button>
+    </form>
+    <form id="message-form">
+      <input type="text" id="message" />
+      <button type="submit">Send message</button>
+    </form>
+    <ul id="message-list"></ul>
+  </body>
+</html>
